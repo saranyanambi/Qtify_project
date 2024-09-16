@@ -1,0 +1,12 @@
+
+.hero {
+    background-color: rgba(18,18,18,1);
+    height: 270px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    gap: 30px;
+  }
