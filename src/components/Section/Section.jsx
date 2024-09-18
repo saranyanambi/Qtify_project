@@ -36,7 +36,7 @@ const Section=({link,title})=>{
         <Box className={styles.sectionHeader}>
             <h2>{title}</h2>
             <button onClick={()=>setIstoggle(!toggle)} className={styles.collapseButton}>
-                {toggle? 'Carousel' :'Show all'}</button>
+                {toggle? 'Carousel' :'Show All'}</button>
         </Box>
         {
             toggle?(<Carouselcomponent items={card} renderCard={(item) => (
