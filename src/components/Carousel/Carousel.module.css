@@ -1,0 +1,67 @@
+.carouselContainer{
+    /* position: relative; */
+    /* width: 100%; /* Set to your desired width */
+    /* height: 300px; */ 
+
+    position: relative;
+    width: 1408px !important;
+
+
+}
+
+
+.leftbtn{
+    /* position: absolute;
+    top: 50%;
+    z-index: 1000; /* Ensure the button is above the carousel content */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    /* border-radius: 50%;
+    padding: 10px;
+    left:0px; */
+     
+
+
+     /* position: absolute;
+    left: 0px;
+        top: 50%;
+        z-index: 1;
+        color: white;
+        transform: translateY(-50%); */
+/* 
+        position: absolute;
+    top: 50%;
+    z-index: 1000;
+    color: white;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 40px; /* Adjust size */
+    /* height: 40px;  */
+    position: absolute;    
+    left: 0px;
+    top: 90px;
+    z-index: 999;
+    cursor: pointer;
+    
+}
+.rightbtn{
+    /* position: absolute;
+    width: 32px;
+height: 32px;
+top: 134px;
+right:0px; */
+
+position: absolute;
+    /* top: 50%;
+    z-index: 1000;
+    color: white;
+    transform: translateY(-50%);
+    right:10px; */
+
+    position: absolute;    
+    right: 0px;
+    top: 90px;
+    z-index: 99999;
+    cursor: pointer;
+
+}
+
