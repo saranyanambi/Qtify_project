@@ -1,0 +1,31 @@
+.sectionContainer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapseButton {
+    background-color: black;
+    color: rgba(52, 201, 75, 1);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+
+.cardGrid{
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:20px;
+
+}
