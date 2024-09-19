@@ -76,7 +76,7 @@ import { Card, CardMedia, CardContent, Typography, Chip } from "@mui/material";
 import styles from "../Card/Card.module.css";
 import { positions } from "@mui/system";
 
-const CardComponent = ({ albumImage, albumName, follows, description }) => {
+const CardComponent = ({ albumImage, albumName, follows, likes }) => {
   return (
     <div>
       <Card
@@ -115,7 +115,7 @@ const CardComponent = ({ albumImage, albumName, follows, description }) => {
 
           {/* Number of Follows using Chip */}
           <Chip
-            label={follows}
+            label={follows?follows+" follows":likes+" likes"}
             size="small"
             sx={{
               width: "auto",
