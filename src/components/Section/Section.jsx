@@ -8,7 +8,7 @@ import Carouselcomponent from '../Carousel/Carousel';
 
 const Section=({link,title})=>{
     const [card,setCard]=useState([]);
-    const [toggle,setIstoggle]=useState(true);
+    const [toggle,setIstoggle]=useState(false);
     console.log(card);
 
     useEffect(()=>{
@@ -36,7 +36,7 @@ const Section=({link,title})=>{
         <Box className={styles.sectionHeader}>
             <h2>{title}</h2>
             <button onClick={()=>setIstoggle(!toggle)} className={styles.collapseButton}>
-                {toggle? 'Show All' :'Carousel'}</button>
+                {toggle? 'Carousel' :'Show All'}</button>
         </Box>
         {
             toggle?(<Carouselcomponent items={card} renderCard={(item) => (
