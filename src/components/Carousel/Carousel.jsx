@@ -127,19 +127,19 @@ const Carousel = ({ items, renderCard }) => {
         navigation={false}
         breakpoints={{
           640: {
-            slidesPerView: 3.5,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 4.5,
+            slidesPerView: 4,
             spaceBetween: 15,
           },
           1024: {
-            slidesPerView: 6.5,
+            slidesPerView: 5,
             spaceBetween: 20,
           },
           1440: {
-            slidesPerView: 6.5,
+            slidesPerView: 6,
             spaceBetween: 25,
           },
         }}
