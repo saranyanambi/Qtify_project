@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Hero from './components/Hero/Hero';
 import CardComponent from './components/Card/Card';
 import Section  from './components/Section/Section';
+import Songs from './components/Songs/Songs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero/>
         <Section link='https://qtify-backend-labs.crio.do/albums/top' title="Top Albums"/>
         <Section link='https://qtify-backend-labs.crio.do/albums/new' title="New Albums"/>
+        <Songs/>
       </Router>
     </div>
   );
