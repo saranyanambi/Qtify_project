@@ -88,8 +88,8 @@
 
 
 // Carousel.jsx
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide ,useSwiper} from "swiper/react";
 // import 'swiper/swiper-bundle.min.css';
 // import 'swiper/swiper.min.css';
 import "swiper/css";
@@ -105,24 +105,25 @@ import styles from "../Carousel/Carousel.module.css";
 // SwiperCore.use([Navigation]);
 
 const Carousel = ({ items, renderCard }) => {
-  const swiperRef = useRef(null);
+  const[swiperInstance,setSwiperinstance]=useState(null);
   const handlePrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slidePrev();
+    if(swiperInstance)
+    {
+      swiperInstance.slidePrev()
     }
   };
 
   const handleNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slideNext();
-    }
+    if(swiperInstance)
+      {
+        swiperInstance.slideNext()
+      }
   };
   return (
     <div className={styles.carouselContainer}>
       <Swiper
-        ref={swiperRef}
+        onSwiper={setSwiperinstance}
         modules={[Navigation]}
-        // spaceBetween={30}
         slidesPerView={3}
         navigation={false}
         breakpoints={{
