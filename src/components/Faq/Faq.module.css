@@ -1,0 +1,21 @@
+.faqHeader{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faqAccordion{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* margin: 60px; */
+    position: absolute;
+    width: 1135px;
+height: 345px;
+top: 2600px;
+left: 153px;
+
+
+}
