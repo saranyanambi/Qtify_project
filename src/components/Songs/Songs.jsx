@@ -7,6 +7,8 @@ import { useState,useEffect } from 'react';
 import styles from '../Section/Section.module.css';
 import CardComponent from '../Card/Card';
 import Carouselcomponent from '../Carousel/Carousel';
+import styless from './Songs.module.css';
+import { border } from '@mui/system';
 
 const Songs=()=>{
     const[song,setSong]=useState([]);
@@ -43,8 +45,9 @@ const Songs=()=>{
             setFiltersong(song.filter((item)=>item.genre.key===newValue))
     }
 
+
     return(
-       <Box component='Section' className={styles.sectionContainer}>
+       <Box component='Section' className={styles.sectionContainer} sx={{border:"5px green"}}>
         <div>
         <h2>Songs</h2>
         </div>
